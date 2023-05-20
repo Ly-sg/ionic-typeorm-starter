@@ -1,6 +1,7 @@
 import { MigrationInterface, QueryRunner } from "typeorm"
 
 export class initPosts1684256229265 implements MigrationInterface {
+    name: string = "initPosts1684256229265";
 
     public async up(queryRunner: QueryRunner): Promise<void> {
         console.info("Running initPosts1684256229265 migration UP");
