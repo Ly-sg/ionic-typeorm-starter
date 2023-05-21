@@ -1,13 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { OrmService } from '../services/orm.service';
-import { ModalController } from '@ionic/angular';
+import { IonicModule, ModalController } from '@ionic/angular';
 import { PostService } from '../services/post.service';
 import { Post } from '../entities/author/post';
+import { CommonModule } from '@angular/common';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-home',
   templateUrl: 'home.page.html',
   styleUrls: ['home.page.scss'],
+  imports: [IonicModule, CommonModule, RouterModule],
+  standalone: true
 })
 export class HomePage implements OnInit {
 
